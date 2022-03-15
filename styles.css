@@ -62,12 +62,12 @@
   color: var(--app-white);
   font-weight: bolder;
   letter-spacing: 0.05rem;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
 .header--menu-link:hover {
   color: var(--app-ternary-dk);
-  text-decoration: none;
 }
 
 /* Hero Section */
@@ -146,9 +146,9 @@
   padding: 1rem 2rem;
 }
 
-/* .contact_form--input:focus ~ .contact_form--label,
-.contact_form--input:valid ~ .contact_form--label,
+/* .contact_form--input:valid ~ .contact_form--label,
 .contact_form--input[readonly] ~ .contact_form--label { */
+.contact_form--input:focus ~ .contact_form--label,
 .contact_form--input:not(:placeholder-shown) ~ .contact_form--label {
   color: var(--app-black);
   top: 0;
