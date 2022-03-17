@@ -7,6 +7,7 @@
   --app-blue: rgb(0, 0, 255);
   --app-blue-10: rgb(0, 0, 255, 0.1);
   --app-white: rgb(255, 255, 255);
+  --app-white-80: rgb(255, 255, 255, 0.8);
   --app-ternary: #f2cf00;
   --app-ternary-dk: #f2b200;
   --app-grey-lt: #f4f4f4;
@@ -71,6 +72,88 @@
 
 .header--menu-link:hover {
   color: var(--app-ternary-dk);
+}
+
+/* Smoke intro section */
+.smoke-container {
+  height: 100vh;
+  background: black;
+  position: relative;
+}
+
+.smoke-video {
+  object-fit: cover;
+  width: 100%;
+}
+
+.smoke-heading {
+  margin: 0;
+  padding: 0;
+  color: var(--app-white-80);
+  font-size: 5em;
+  letter-spacing: 0.2em;
+  font-family: var(--app-font-secondary) sans-serif;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+.smoke-heading span {
+  opacity: 0;
+  display: inline-block;
+  animation: animate 7s 0s linear infinite forwards;
+  /* @keyframes animation-name	
+animation-duration	
+animation-delay	
+animation-iteration-count	
+animation-direction	
+animation-timing-function	
+animation-fill-mode	
+animation; */
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(2px);
+  }
+}
+
+.smoke-heading span:nth-child(1) {
+  animation-delay: 1.5s;
+}
+.smoke-heading span:nth-child(2) {
+  animation-delay: 2s;
+}
+.smoke-heading span:nth-child(3) {
+  animation-delay: 2.5s;
+}
+.smoke-heading span:nth-child(4) {
+  animation-delay: 3s;
+}
+.smoke-heading span:nth-child(5) {
+  animation-delay: 3.5s;
+}
+.smoke-heading span:nth-child(6) {
+  animation-delay: 3.75s;
+}
+.smoke-heading span:nth-child(7) {
+  animation-delay: 4s;
+}
+.smoke-heading span:nth-child(8) {
+  animation-delay: 5s;
+}
+.smoke-heading span:nth-child(9) {
+  animation-delay: 6s;
 }
 
 /* Hero Section */
