@@ -35,45 +35,53 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!-- navigation section -->
-    <header class="header">
-      <div class="container">
-        <div class="row align-items-center h-100">
-          <!-- logo -->
-          <nav class="col-lg-6">
-            <div class="header--logo">SamirSir</div>
-          </nav>
+    <nav class="header navbar navbar-expand-lg">
+      <main class="container">
+        <!-- logo -->
+        <section class="navbar-brand">
+          <div class="header--logo">SamirSir</div>
+        </section>
 
-          <!-- links -->
-          <nav class="col-lg-6">
-            <ul
-              class="header--menu d-flex align-items-center justify-content-between flex-wrap"
-            >
-              <li class="header--menu-item">
-                <!-- icon -->
-                <a class="header--menu-link" href="#services"> Services </a>
-              </li>
+        <!-- navbar toggler -->
+        <section
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+        >
+          <span class="header--menu-link">Toggle</span>
+        </section>
 
-              <li class="header--menu-item">
-                <!-- icon -->
-                <a class="header--menu-link" href="#portfolio"> Portfolio </a>
-              </li>
+        <!-- links -->
+        <section class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="header--menu navbar-nav mx-auto">
+            <li class="header--menu-item">
+              <!-- icon -->
+              <a class="header--menu-link" href="#services"> Services </a>
+            </li>
 
-              <li class="header--menu-item">
-                <!-- icon -->
-                <a class="header--menu-link" href="#projects"> Projects </a>
-              </li>
+            <li class="header--menu-item">
+              <!-- icon -->
+              <a class="header--menu-link" href="#portfolio"> Portfolio </a>
+            </li>
 
-              <li class="header--menu-item">
-                <!-- icon -->
-                <a class="header--menu-link" href="#contact"> Contact </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+            <li class="header--menu-item">
+              <!-- icon -->
+              <a class="header--menu-link" href="#projects"> Projects </a>
+            </li>
+
+            <li class="header--menu-item">
+              <!-- icon -->
+              <a class="header--menu-link" href="#contact"> Contact </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </nav>
 
     <!-- main content here -->
     <main>
@@ -183,10 +191,11 @@
                 <!-- name -->
                 <section class="contact_form--group">
                   <input
-                    id="name"
                     type="text"
                     placeholder="Name"
+                    id="name"
                     class="contact_form--input"
+                    style="text-transform: capitalize"
                     required
                   />
                   <label class="contact_form--label" for="name"> Name </label>
